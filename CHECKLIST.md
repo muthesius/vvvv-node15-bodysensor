@@ -1,3 +1,9 @@
+# To Do (others)
+
+- [x] Plan Workshop Section
+- [x] Send Text & Title to Joreg
+
+
 # To Bring
 
 - [ ] Sense/Stage Sensor Kit (zeos)
@@ -6,6 +12,7 @@
 
 # To Write
 
+- [x] Workshop Description
 - [ ] Presentation
   - [ ] Sensors on the Market
   - [ ] 10VE system overview
@@ -18,4 +25,3 @@
 - [ ] SA Base Pack
 - [ ] Super understandable illusrative example Patches
 - [ ] Packing up a Sense/stage receiver
-
