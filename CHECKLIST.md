@@ -2,7 +2,7 @@
 
 - [ ] Sense/Stage Sensor Kit (zeos)
 - [ ] Wireless Routers (2x) (jens/zeos)
-- [ ] 
+
 
 # To Write
 
@@ -18,4 +18,4 @@
 - [ ] SA Base Pack
 - [ ] Super understandable illusrative example Patches
 - [ ] Packing up a Sense/stage receiver
-- [ ] (jens) research if their is a firmata possibility
+
