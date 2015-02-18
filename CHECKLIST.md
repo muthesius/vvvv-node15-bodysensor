@@ -2,7 +2,7 @@
 
 - [x] Plan Workshop Section
 - [x] Send Text & Title to Joreg
-- [ ] Picture for Joreg
+- [x] Picture for Joreg
 
 # To Bring
 
