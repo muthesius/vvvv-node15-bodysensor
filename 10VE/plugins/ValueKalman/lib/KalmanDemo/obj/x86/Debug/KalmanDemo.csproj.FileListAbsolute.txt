@@ -1,0 +1,9 @@
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\bin\Debug\KalmanDemo.exe
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\bin\Debug\KalmanDemo.pdb
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\KalmanDemo.Form1.resources
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\KalmanDemo.Properties.Resources.resources
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\KalmanDemo.exe
+C:\Users\zeos\VVVV.Plugins\plugins\ValueKalman\lib\KalmanDemo\obj\x86\Debug\KalmanDemo.pdb
