@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\VVVV\10VE\Workshop\biofeedback_reader.v4p" scrollx="60" scrolly="-360" systemname="biofeedback_reader" filename="C:\VVVV\10VE\Workshop\biofeedback_reader.v4p">
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\biofeedback_reader.v4p" scrollx="60" scrolly="-360" systemname="biofeedback_reader" filename="C:\VVVV\10VE\Workshop\biofeedback_reader.v4p">
    <BOUNDS type="Window" left="12855" top="2160" width="17895" height="7230">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -196,7 +196,7 @@
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="OSC_record" filename="modules\OSC_record.v4p" nodename="modules\OSC_record.v4p" componentmode="InAWindow" id="13">
+   <NODE systemname="OSC_record" filename="modules\OSC_record.v4p" nodename="modules\OSC_record.v4p" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="1980" top="2790" width="9000" height="270">
    </BOUNDS>
    <PIN pinname="Input Data" visible="1">

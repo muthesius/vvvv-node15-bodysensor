@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\VVVV\10VE\Workshop\_example_filters_1.v4p" scrollx="0" scrolly="0" systemname="_example_filters_1" filename="C:\VVVV\10VE\Workshop\_example_filters_1.v4p">
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_1.v4p" scrollx="0" scrolly="0" systemname="_example_filters_1" filename="C:\VVVV\10VE\Workshop\_example_filters_1.v4p">
    <BOUNDS type="Window" left="9465" top="300" width="13455" height="13935">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -213,7 +213,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2670" top="300" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="DATA\2015_04_23T18_57_26.b64.osc.raw">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="DATA\2015_04_23T20_10_58.b64.osc.raw">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -287,6 +287,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Reset">
    </LINK>
@@ -315,7 +317,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8040" top="1110" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="DATA">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\DATA">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -335,7 +337,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Insert" slicecount="1" values="1" visible="1">
+   <PIN pinname="Insert" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Frame Count" slicecount="1" values="512">
    </PIN>
@@ -377,7 +379,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Insert" slicecount="1" values="1" visible="1">
+   <PIN pinname="Insert" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Frame Count" slicecount="1" values="512">
    </PIN>
@@ -492,6 +494,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Reset">
