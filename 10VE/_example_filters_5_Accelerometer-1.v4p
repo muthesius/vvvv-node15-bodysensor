@@ -1,0 +1,195 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_5_Accelerometer-1.v4p">
+   <NODE systemname="Statistics (Value)" filename="plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1515" top="3435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="3" values="-0.0553766801490626,-0.0548768644867155,-1.04901916004116">
+   </PIN>
+   <PIN pinname="StdDev" visible="1">
+   </PIN>
+   <PIN pinname="Input Bin Size" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="VectorSize" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1530" top="2790" width="945" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="3" values="-0.0437295335265227,-0.0550637949194188,-1.05387482371306">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2985" top="2805" width="945" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1530" top="1785" width="3000" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output 1" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 2" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="4485" top="2850" width="945" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="16">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output 3" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Statistics (Value)" filename="plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2970" top="3555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="3" values="-0.0553766801490626,-0.0548768644867155,-1.04901916004116">
+   </PIN>
+   <PIN pinname="StdDev" visible="1">
+   </PIN>
+   <PIN pinname="Input Bin Size" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="VectorSize" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE systemname="Statistics (Value)" filename="plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="4470" top="3645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="3" values="-0.0553766801490626,-0.0548768644867155,-1.04901916004116">
+   </PIN>
+   <PIN pinname="StdDev" visible="1">
+   </PIN>
+   <PIN pinname="Input Bin Size" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="VectorSize" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5085" top="1020" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5085" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BufSize">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Frame Count" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="5085" y="2010">
+   </LINKPOINT>
+   <LINKPOINT x="2175" y="2010">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Frame Count" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="5070" y="2025">
+   </LINKPOINT>
+   <LINKPOINT x="3630" y="2025">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Frame Count" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="5100" y="2055">
+   </LINKPOINT>
+   <LINKPOINT x="5100" y="2055">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2370" top="4230" width="3045" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="StdDev" dstnodeid="0" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="StdDev" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="StdDev" dstnodeid="0" dstpinname="Input 3">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2385" top="4935" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2385" top="4935" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1515" top="795" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1515" top="795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

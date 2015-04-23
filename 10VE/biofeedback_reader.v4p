@@ -31,7 +31,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|int rst, float heart, float gsr, float mic, Vector3D acc|">
+   <PIN pinname="Configuration" slicecount="1" values="|int rst, float pulseSignal, float gsrLevel, float micLevel, Vector3D acc|">
    </PIN>
    <PIN pinname="accXYZ" visible="1">
    </PIN>
@@ -48,6 +48,12 @@
    <PIN pinname="Address" visible="1">
    </PIN>
    <PIN pinname="Match Rule" slicecount="1" visible="1" values="Last">
+   </PIN>
+   <PIN pinname="pulseSignal" visible="1">
+   </PIN>
+   <PIN pinname="gsrLevel" visible="1">
+   </PIN>
+   <PIN pinname="micLevel" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Input">
@@ -125,9 +131,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="mic">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="mic" dstnodeid="6" dstpinname="Y Input Value" linkstyle="PolyLine">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4890" top="4860" width="795" height="240">
    </BOUNDS>
@@ -139,9 +145,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="gsr">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="gsr" dstnodeid="7" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3930" top="4950" width="795" height="240">
    </BOUNDS>
@@ -153,7 +159,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="heart">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.453920125961304">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
@@ -406,8 +412,6 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Address" dstnodeid="23" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="heart" dstnodeid="8" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="rst" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="31" systemname="IOBox (Enumerations)">
@@ -463,5 +467,11 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="35" srcpinname="Count" dstnodeid="34" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="pulseSignal" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="gsrLevel" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="micLevel" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

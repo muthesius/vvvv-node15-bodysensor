@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_root.v4p" scrollx="165" scrolly="-360" systemname="_root" filename="C:\VVVV\10VE\Workshop\_root.v4p">
-   <BOUNDS type="Window" left="750" top="570" width="19410" height="12975">
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_root.v4p" scrollx="0" scrolly="2820" systemname="_root" filename="C:\VVVV\10VE\Workshop\_root.v4p">
+   <BOUNDS type="Window" left="7470" top="5595" width="19410" height="12975">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -681,7 +681,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|int rst, float heart, float gsr, float mic, Vector3D acc|">
+   <PIN pinname="Configuration" slicecount="1" values="|int rst, float pulseSignal, float gsrLevel, float micLevel, Vector3D acc|">
    </PIN>
    <PIN pinname="Verbose" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -696,6 +696,12 @@
    <PIN pinname="mic" visible="1" slicecount="1" values="0.504398822784424">
    </PIN>
    <PIN pinname="accXYZ" visible="1" slicecount="3" values="0.50079357624054,0.498596012592316,0.530216097831726">
+   </PIN>
+   <PIN pinname="pulseSignal" visible="1">
+   </PIN>
+   <PIN pinname="gsrLevel" visible="1">
+   </PIN>
+   <PIN pinname="micLevel" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="68" dstpinname="Input" linkstyle="PolyLine">
@@ -787,7 +793,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|int rst, float heart, float gsr, float mic, Vector3D acc|">
+   <PIN pinname="Configuration" slicecount="1" values="|int rst, float pulseSignal, float gsrLevel, float micLevel, Vector3D acc|">
    </PIN>
    <PIN pinname="Verbose" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -802,6 +808,12 @@
    <PIN pinname="mic" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="accXYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="pulseSignal" visible="1">
+   </PIN>
+   <PIN pinname="gsrLevel" visible="1">
+   </PIN>
+   <PIN pinname="micLevel" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="77" srcpinname="Output" dstnodeid="81" dstpinname="Input" linkstyle="PolyLine">
@@ -888,6 +900,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="103" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Reset">
@@ -998,4 +1012,16 @@
    <PIN pinname="Size" slicecount="1" values="17">
    </PIN>
    </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="67" dstpinname="pulseSignal">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="67" dstpinname="gsrLevel">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="67" dstpinname="micLevel">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="77" dstpinname="pulseSignal">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="77" dstpinname="gsrLevel">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="77" dstpinname="micLevel">
+   </LINK>
    </PATCH>
