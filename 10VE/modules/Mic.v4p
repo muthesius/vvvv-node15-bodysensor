@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\PROJECTS\10VE\VVVV\modules\Sensors\Mic.v4p" systemname="Mic" filename="D:\PROJECTS\10VE\VVVV\modules\Sensors\Mic.v4p">
-   <BOUNDS type="Window" left="26685" top="2640" width="17715" height="12510">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\modules\Mic.v4p" systemname="Mic" filename="D:\PROJECTS\10VE\VVVV\modules\Sensors\Mic.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="12120" top="2160" width="17715" height="12510">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3315" top="2505" width="1350" height="270">

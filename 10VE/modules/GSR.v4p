@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\VVVV\10VE\Workshop\modules\GSR.v4p" systemname="GSR" filename="D:\PROJECTS\10VE\VVVV\modules\Sensors\GSR.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\modules\GSR.v4p" systemname="GSR" filename="D:\PROJECTS\10VE\VVVV\modules\Sensors\GSR.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="8685" top="1650" width="22350" height="14730">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="Insert" visible="1">
    </PIN>
-   <PIN pinname="Frame Count" slicecount="1" values="255" visible="1">
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="255">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
