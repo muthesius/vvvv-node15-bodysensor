@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="0" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
-   <BOUNDS type="Window" left="8820" top="330" width="13455" height="13935">
+   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="0" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
+   <BOUNDS type="Window" left="8820" top="330" width="15285" height="13935">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -339,9 +339,9 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0.491836100816727">
    </PIN>
-   <PIN pinname="Insert" slicecount="1" values="1" visible="1">
+   <PIN pinname="Insert" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Frame Count" slicecount="1" values="512" visible="1">
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="512">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -423,6 +423,8 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="13">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <NODE systemname="SignalNormalize" filename="modules\SignalNormalize.v4p" nodename="modules\SignalNormalize.v4p" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="600" top="5370" width="7845" height="270">
@@ -438,6 +440,10 @@
    <BOUNDS type="Window" left="14415" top="4815" width="8190" height="7590">
    </BOUNDS>
    <PIN pinname="BufferSize" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Float">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Reset">
@@ -469,7 +475,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5790" top="4725" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="255">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -497,11 +503,11 @@
    </PIN>
    <PIN pinname="BangOut" visible="1">
    </PIN>
-   <PIN pinname="FineTune (~0.9 ... ~2.1)" slicecount="1" values="2">
+   <PIN pinname="FineTune (~0.9 ... ~2.1)" slicecount="1" values="1.55">
    </PIN>
    <PIN pinname="EnergyBufferFrameCount" slicecount="1" values="32">
    </PIN>
-   <PIN pinname="DecayOfDecayOut" slicecount="1" values="0.5">
+   <PIN pinname="DecayOfDecayOut" slicecount="1" values="0.45">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="35" dstpinname="Input">
@@ -539,7 +545,7 @@
    </PIN>
    <PIN pinname="Insert" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Frame Count" slicecount="1" values="512" visible="1">
+   <PIN pinname="Frame Count" slicecount="1" visible="1" values="512">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -585,9 +591,9 @@
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="38" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4560" top="10125" width="780" height="660">
+   <BOUNDS type="Box" left="3600" top="9960" width="780" height="660">
    </BOUNDS>
-   <BOUNDS type="Node" left="4560" top="10125" width="0" height="0">
+   <BOUNDS type="Node" left="3600" top="9960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -597,23 +603,11 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="BPM">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="73">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="13">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="3615" top="9975" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="38" srcpinname="BPM" dstnodeid="40" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4365" top="9615" width="795" height="240">
    </BOUNDS>
@@ -627,18 +621,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="IBI" dstnodeid="41" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="Round (Value)" nodename="Round (Value)" componentmode="Hidden" id="42" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll">
-   <BOUNDS type="Node" left="3615" top="10335" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="42" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="39" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10605" top="4875" width="795" height="240">
@@ -667,14 +649,12 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.5">
+   <PIN pinname="Input 2" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="-0.5">
+   <PIN pinname="Input 1" slicecount="1" values="-0.25">
    </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="37" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Peak" dstnodeid="54" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Frame Count">
    </LINK>
@@ -691,5 +671,37 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Spread Count">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="56" dstpinname="Y">
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="750" top="3315" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum forground fps" visible="1">
+   </PIN>
+   <PIN pinname="Maximum background fpsS" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1020" top="2715" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1020" top="2715" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum forground fps">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum background fpsS">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="BPM" dstnodeid="39" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="54" dstpinname="Switch">
    </LINK>
    </PATCH>

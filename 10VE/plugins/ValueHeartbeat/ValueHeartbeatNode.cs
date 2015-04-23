@@ -81,7 +81,7 @@ namespace VVVV.Nodes
 			{
 				for (int i = 0; i < SpreadMax; i++) {
 				
-					sampleCounter += 2;                         // keep track of the time in mS with this variable
+					sampleCounter += 167;                         // keep track of the time in mS with this variable
 	    			Signal = FInput[i];
 					ulong N = ( sampleCounter - lastBeatTime);       // monitor the time since the last beat to avoid noise
 					FIBI[i] = IBI;
