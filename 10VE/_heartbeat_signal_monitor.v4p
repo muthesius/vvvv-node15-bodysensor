@@ -5,7 +5,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1500" top="4920" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="2445" top="360" width="6120" height="4920">
+   <BOUNDS type="Window" left="435" top="165" width="6120" height="4920">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
