@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_3_GSR_slow_signals_processing.v4p" scrollx="15" scrolly="0" systemname="_example_filters_3_GSR_slow_signals_processing" filename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_3_GSR_slow_signals_processing.v4p" locked="0">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\_example_filters_3_GSR_slow_signals_processing.v4p" scrollx="15" scrolly="0" systemname="_example_filters_3_GSR_slow_signals_processing" filename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_3_GSR_slow_signals_processing.v4p" locked="0">
    <BOUNDS type="Window" left="6780" top="150" width="17100" height="10545">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -505,6 +505,8 @@
    </PIN>
    <PIN pinname="Gain" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="2460" top="705" width="18540" height="12525">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="15" dstpinname="Input">
    </LINK>
