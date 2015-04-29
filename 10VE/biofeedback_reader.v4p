@@ -31,7 +31,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|int rst, float pulseSignal, float gsrLevel, float micLevel, Vector3D acc|">
+   <PIN pinname="Configuration" slicecount="1" values="|int rst, float heart, float gsr, float mic, Vector3D acc|">
    </PIN>
    <PIN pinname="accXYZ" visible="1">
    </PIN>
