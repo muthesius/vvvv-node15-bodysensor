@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\biofeedback_reader.v4p" scrollx="60" scrolly="-360" systemname="biofeedback_reader" filename="C:\VVVV\10VE\Workshop\biofeedback_reader.v4p">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\biofeedback_reader.v4p" scrollx="60" scrolly="-360" systemname="biofeedback_reader" filename="C:\VVVV\10VE\Workshop\biofeedback_reader.v4p">
    <BOUNDS type="Window" left="12855" top="2160" width="17895" height="7230">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -131,7 +131,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="mic">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
@@ -145,7 +145,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="gsr">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
@@ -468,10 +468,10 @@
    </LINK>
    <LINK srcnodeid="35" srcpinname="Count" dstnodeid="34" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="pulseSignal" dstnodeid="8" dstpinname="Y Input Value">
+   <LINK srcnodeid="2" srcpinname="heart" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="gsrLevel" dstnodeid="7" dstpinname="Y Input Value">
+   <LINK srcnodeid="2" srcpinname="gsr" dstnodeid="7" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="micLevel" dstnodeid="6" dstpinname="Y Input Value">
+   <LINK srcnodeid="2" srcpinname="mic" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

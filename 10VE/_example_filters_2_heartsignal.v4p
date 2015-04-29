@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="0" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="0" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
    <BOUNDS type="Window" left="6780" top="150" width="17670" height="13935">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -13,11 +13,11 @@
    </PIN>
    <PIN pinname="accXYZ" visible="1">
    </PIN>
-   <PIN pinname="mic" visible="1">
+   <PIN pinname="mic" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="gsr" visible="1">
+   <PIN pinname="gsr" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="heart" visible="1">
+   <PIN pinname="heart" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="onData" visible="1">
    </PIN>
