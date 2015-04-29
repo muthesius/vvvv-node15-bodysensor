@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\_heartbeat_signal_monitor.v4p" systemname="_heartbeat_signal_monitor" filename="C:\VVVV\10VE\Workshop\_heartbeat_signal_monitor.v4p">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\_heartbeat_signal_monitor.v4p" systemname="_heartbeat_signal_monitor" filename="C:\VVVV\10VE\Workshop\_heartbeat_signal_monitor.v4p">
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="1500" top="4920" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1500" top="4920" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="435" top="165" width="6120" height="4920">
+   <BOUNDS type="Window" left="0" top="0" width="6120" height="4920">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

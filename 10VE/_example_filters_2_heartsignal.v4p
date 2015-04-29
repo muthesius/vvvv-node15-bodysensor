@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="0" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
-   <BOUNDS type="Window" left="6780" top="150" width="17670" height="13935">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\_example_filters_2_heartsignal.v4p" scrollx="0" scrolly="-360" systemname="_example_filters_2_heartsignal" filename="C:\VVVV\10VE\Workshop\_example_filters_2_heartsignal.v4p" locked="0">
+   <BOUNDS type="Window" left="6180" top="720" width="17670" height="11385">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -505,7 +505,7 @@
    </PIN>
    <PIN pinname="FineTune (~0.9 ... ~2.1)" slicecount="1" values="1.55">
    </PIN>
-   <PIN pinname="EnergyBufferFrameCount" slicecount="1" values="32">
+   <PIN pinname="EnergyBufferFrameCount" slicecount="1" values="32" visible="1">
    </PIN>
    <PIN pinname="DecayOfDecayOut" slicecount="1" values="0.45">
    </PIN>
@@ -584,6 +584,8 @@
    <PIN pinname="IBI" visible="1">
    </PIN>
    <PIN pinname="Peak" visible="1">
+   </PIN>
+   <PIN pinname="Framerate" slicecount="1" visible="1" values="60">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Reset">
@@ -710,6 +712,30 @@
    <PIN pinname="Input String" slicecount="1" values="|more info? dive into:&cr;&lf;&cr;&lf;http://pulsesensor.com/pages/pulse-sensor-amped-arduino-v1dot1&cr;&lf;&cr;&lf;http://www.codeproject.com/Articles/4353/ECG-recording-storing-filtering-and-recognition|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="35" srcpinname="BangOut" dstnodeid="54" dstpinname="Switch">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1125" top="9045" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1125" top="9045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="35" dstpinname="EnergyBufferFrameCount">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="54" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="5130" top="8655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frames per second" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="frames per second" dstnodeid="38" dstpinname="Framerate">
    </LINK>
    </PATCH>
