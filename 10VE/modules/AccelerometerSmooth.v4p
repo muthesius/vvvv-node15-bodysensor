@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\modules\AccelerometerSmooth.v4p" scrollx="0" scrolly="0" systemname="AccelerometerSmooth" filename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\modules\AccelerometerSmooth.v4p">
+   <PATCH nodename="C:\Users\jens\Documents\bodysensor-node15\10VE\modules\AccelerometerSmooth.v4p" scrollx="0" scrolly="0" systemname="AccelerometerSmooth" filename="C:\Users\zeos\Documents\GitHub\bodysensor-node15\10VE\modules\AccelerometerSmooth.v4p">
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Statistics (Value)" filename="..\plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="8">
@@ -13,6 +13,8 @@
    </PIN>
    <PIN pinname="VectorSize" slicecount="1" values="3">
    </PIN>
+   <BOUNDS type="Box" left="1515" top="3435">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="7">
    <BOUNDS type="Node" left="1530" top="2790" width="945" height="270">
@@ -27,11 +29,13 @@
    </PIN>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="1530" top="2790">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Input">
    </LINK>
    <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2985" top="2805" width="945" height="270">
+   <BOUNDS type="Node" left="2985" top="2790" width="945" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -43,6 +47,8 @@
    </PIN>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="2985" top="2790">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1530" top="1785" width="3000" height="270">
@@ -63,7 +69,7 @@
    <LINK srcnodeid="5" srcpinname="Output 2" dstnodeid="6" dstpinname="Input">
    </LINK>
    <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="4485" top="2850" width="945" height="270">
+   <BOUNDS type="Node" left="4485" top="2790" width="945" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -75,11 +81,13 @@
    </PIN>
    <PIN pinname="Output Bin Size" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="4485" top="2790">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output 3" dstnodeid="4" dstpinname="Input">
    </LINK>
    <NODE systemname="Statistics (Value)" filename="..\plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2970" top="3555" width="100" height="100">
+   <BOUNDS type="Node" left="2970" top="3435" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="3" values="-0.0553766801490626,-0.0548768644867155,-1.04901916004116">
    </PIN>
@@ -89,9 +97,11 @@
    </PIN>
    <PIN pinname="VectorSize" slicecount="1" values="3">
    </PIN>
+   <BOUNDS type="Box" left="2970" top="3435">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Statistics (Value)" filename="..\plugins\ValueStdDev\ValueStdDev.csproj" nodename="Statistics (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="4470" top="3645" width="100" height="100">
+   <BOUNDS type="Node" left="4470" top="3435" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="3" values="-0.0553766801490626,-0.0548768644867155,-1.04901916004116">
    </PIN>
@@ -101,6 +111,8 @@
    </PIN>
    <PIN pinname="VectorSize" slicecount="1" values="3">
    </PIN>
+   <BOUNDS type="Box" left="4470" top="3435">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="3" dstpinname="Input">
    </LINK>
@@ -206,4 +218,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <BOUNDS type="Window" left="0" top="0" width="9000" height="6780">
+   </BOUNDS>
    </PATCH>
